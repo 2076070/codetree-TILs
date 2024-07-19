@@ -1,7 +1,7 @@
 def cm(n,m):
     tmp=n
     while(True):
-        if (tmp%18==0): break
+        if (tmp%m==0): break
         tmp+=n
     print(tmp)
 
