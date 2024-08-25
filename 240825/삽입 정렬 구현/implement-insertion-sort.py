@@ -10,7 +10,7 @@ def insertion_sort(arr):
     return arr
 
 n = int(input())
-arr1 = list(input().split())
+arr1 = list(map(int, input().split()))
 
 for e in insertion_sort(arr1):
     print(e, end=" ")
