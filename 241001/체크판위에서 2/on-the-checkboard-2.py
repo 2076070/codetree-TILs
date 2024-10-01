@@ -15,7 +15,8 @@ for i in range(1, R):
                     if(arr[i][j] != arr[ii][jj]):
                         for iii in range(ii+1, R):
                             for jjj in range(jj+1, C):
-                                if(arr[ii][jj] != arr[iii][jjj]):
+                                if((iii==R-1)and(jjj==C-1)and(arr[ii][jj] != arr[iii][jjj])):
+                                    # print(f"({i+1},{j+1}) ({ii+1},{jj+1}) ({iii+1},{jjj+1})")
                                     cnt+=1
 
 print(cnt)
